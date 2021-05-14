@@ -121,8 +121,6 @@ function filterPaths(paths, date, numOfPassengers) {
           destination: path[layovers].destination,
           date: path[1].config.date,
           departureTime: path[1].config.departureTime,
-          arrivalTime: path[layovers].config.arrivalTime,
-          arrivalTimeStamp: path[layovers].config.arrivalTimeStamp,
           departureTimeStamp: path[1].config.departureTimeStamp,
           dayChange: path[1].config.date !== path[layovers].config.date,
           totalFare: totalFare * (parseInt(numOfPassengers) || 1)
@@ -145,7 +143,7 @@ function checkLayoverCriteria(path, startDate) {
   }
 
   for (let i = 0; i < path.length - 1; i++) {
-    if (typeof path[i] === "object" && typeof path[i + 1] === "object" && path[i + 1].config.departureTimeStamp - path[i].config.arrivalTimeStamp <= 1800000) {
+    if (typeof path[i] === "object" && typeof path[i + 1] === "object" && path[i + 1].config.departureTimeStamp <= 1800000) {
       lowerLayover = true;
       break;
     }

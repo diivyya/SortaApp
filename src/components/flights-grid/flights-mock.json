@@ -1,7 +1,6 @@
 {
   "nonStopFlights": [
     {
-      "arrivalTime": "16:30",
       "date": "2020/11/02",
       "departureTime": "14:30",
       "destination": "Delhi (DEL)",
@@ -9,7 +8,6 @@
       "name": "Air India",
       "origin": "Mumbai (BOM)",
       "price": 4170,
-      "arrivalTimeStamp": 1604314800000,
       "departureTimeStamp": 1604307600000
     }
   ],
@@ -20,15 +18,12 @@
         "destination": "Delhi (DEL)",
         "date": "2020/11/02",
         "departureTime": "7:20",
-        "arrivalTime": "22:10",
-        "arrivalTimeStamp": 1604335200000,
         "departureTimeStamp": 1604281800000,
         "dayChange": false,
         "totalFare": 10868
       },
       "flights": [
         {
-          "arrivalTime": "9:50",
           "date": "2020/11/02",
           "departureTime": "7:20",
           "destination": "Pune (PNQ)",
@@ -36,11 +31,9 @@
           "name": "Air India",
           "origin": "Mumbai (BOM)",
           "price": 5635,
-          "arrivalTimeStamp": 1604290800000,
           "departureTimeStamp": 1604281800000
         },
         {
-          "arrivalTime": "22:10",
           "date": "2020/11/02",
           "departureTime": "20:00",
           "destination": "Delhi (DEL)",
@@ -48,7 +41,6 @@
           "name": "Air India",
           "origin": "Pune (PNQ)",
           "price": 5233,
-          "arrivalTimeStamp": 1604335200000,
           "departureTimeStamp": 1604327400000
         }
       ]
@@ -59,15 +51,12 @@
         "destination": "Delhi (DEL)",
         "date": "2020/11/02",
         "departureTime": "6:10",
-        "arrivalTime": "22:10",
-        "arrivalTimeStamp": 1604335200000,
         "departureTimeStamp": 1604277600000,
         "dayChange": false,
         "totalFare": 7770
       },
       "flights": [
         {
-          "arrivalTime": "6:58",
           "date": "2020/11/02",
           "departureTime": "6:10",
           "destination": "Pune (PNQ)",
@@ -75,11 +64,9 @@
           "name": "Air India",
           "origin": "Mumbai (BOM)",
           "price": 2537,
-          "arrivalTimeStamp": 1604280480000,
           "departureTimeStamp": 1604277600000
         },
         {
-          "arrivalTime": "22:10",
           "date": "2020/11/02",
           "departureTime": "20:00",
           "destination": "Delhi (DEL)",
@@ -87,7 +74,6 @@
           "name": "Air India",
           "origin": "Pune (PNQ)",
           "price": 5233,
-          "arrivalTimeStamp": 1604335200000,
           "departureTimeStamp": 1604327400000
         }
       ]
