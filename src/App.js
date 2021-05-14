@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
+import Alert from 'react-bootstrap/Alert';
 import SearchForm from './container/search-form/search-form';
 import FlightsGrid from './components/flights-grid/flights-grid';
 import { getFlights } from './actions';
@@ -14,7 +15,7 @@ function App(props) {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Flight Search App</h2>
+        <h1>Flight Search Engine</h1>
       </header>
       <section className="Main-container">
         <aside className="Search-section">

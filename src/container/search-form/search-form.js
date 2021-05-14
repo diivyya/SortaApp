@@ -136,7 +136,7 @@ export const SearchForm = (props) => {
           </Form.Control>
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button variant="outline-dark" type="submit">
           Search
         </Button>
         </Form> 

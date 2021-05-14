@@ -2,7 +2,6 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { DetailLabel } from './../detail-label/detail-label';
-import { PriceInfo } from './../price-info/price-info';
 import nonStopFlightLogo from './../../assets/nonstop.png';
 import './flight-info.css';
 
@@ -14,14 +13,14 @@ export const FlightInfo = (props) => {
   const { name, flightNo, departureTime, origin, destination, price, date  } = props.data;
   const isMultiMode = props.isMultiMode;
   return (
-    <Card>
+    <Card bg="light" border="primary">
       <section className={`Flight-info ${isMultiMode ? 'gray-background' : ''}`}>
-        <FlightLogo></FlightLogo>
+      <Card.Header><b>Rs. {price}</b></Card.Header>
         <DetailLabel mainText={name} subText={flightNo} ></DetailLabel>
         <DetailLabel mainText={departureTime} subText={origin} ></DetailLabel>
         <DetailLabel mainText="-" subText={destination} ></DetailLabel>
-        {isMultiMode ? null : <PriceInfo amount={price} />}
-        {isMultiMode ? null : <Button variant="outline-danger">Book</Button>}
+        <FlightLogo></FlightLogo>
+        <Button variant="outline-danger">Book</Button>
       </section>
     </Card>
   )

@@ -9,7 +9,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #00bfff;
   min-height: 10vh;
   height: 100px;
   display: flex;
@@ -28,9 +28,7 @@
   color: #61dafb;
 }
 
-.Main-container {
-  background-color: #f5f5f5;
-}
+
 
 @media screen and (min-width: 640px){
   .Main-container {
